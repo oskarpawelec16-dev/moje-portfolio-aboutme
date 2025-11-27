@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Moja Firma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+    <h1>Kontakt</h1>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<section class="contact-form">
+  <h2>Skontaktuj się z nami</h2>
+
+  <form action="mailto:twoj@email.com" method="POST" enctype="text/plain">
+    <label>Imię i nazwisko
+      <input type="text" name="name" required>
+    </label>
+
+    <label>Twój email
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Wiadomość
+      <textarea name="message" required></textarea>
+    </label>
+
+    <button class="btn small-btn" type="submit">Wyślij</button>
+  </form>
+</section>
+
+</body>
+</html>

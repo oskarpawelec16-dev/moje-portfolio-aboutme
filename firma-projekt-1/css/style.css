@@ -1,0 +1,130 @@
+:root{
+  --bg: #f7f7f7;
+  --card: #ffffff;
+  --primary: #1f6feb;
+  --accent: #ff6b6b;
+  --text: #222;
+  --muted: #666;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  margin:0;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.hero-image img{
+  width: 50%;
+  max-width: 450px;
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+}
+
+.hero {
+  padding: 60px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #444;
+}
+
+a.btn{
+  display:inline-block;
+  background:var(--primary);
+  color:white;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+/* Sekcja usług */
+.services {
+  text-align: center;
+  padding: 40px;
+}
+
+.service {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 20px 8px rgba(0,0,0,0.1);
+}
+
+.service i {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* Formularz kontaktowy */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  width: 100%;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 900px){
+  .services{ grid-template-columns:repeat(2,1fr); }
+  .hero-inner{ flex-direction:column; text-align:center; }
+}
+
+@media (max-width: 600px){
+  .services{ grid-template-columns:repeat(1,1fr); padding:0 12px; }
+  nav a{ display:block; margin:8px 0; }
+  .hero h2{ font-size:26px; }
+} 
+.small-btn {
+  display: block;
+  margin: 10px auto 0 10px; /* góra | auto | dół | auto */
+  font-size: 14px;
+  padding: 8px 18px;
+  border-radius: 10px;
+}
+
